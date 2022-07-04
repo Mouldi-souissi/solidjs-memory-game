@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  filter: drop-shadow(20px 30px 10px grey);
+  transition: all 0.1s ease-in-out;
+}
+.square {
+  background: grey;
+  filter: drop-shadow(2px 3px 4px black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.show {
+  background: yellowgreen !important;
+}
